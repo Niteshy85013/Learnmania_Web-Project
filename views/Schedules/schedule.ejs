@@ -1,0 +1,199 @@
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- JavaScript Bundle with Popper -->
+
+
+
+<link rel="stylesheet" href="/static/css/table.css">
+
+<style>
+    body {
+        background: #88ABFF;
+    }
+    </style>
+
+<div class="container">
+    <h1 class="text-center text-dark mt-5">Welcome to Schedule Section</h1>
+    <h6 class="text-center text-dark">Set Schedules and improve learning according to your plan.</h6>
+    <div class="table-wrapper">
+        <div class="table-title">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2>Set <b>Schedules</b></h2>
+                </div>
+                <div class="col-sm-6">
+                    <a href="#addScheduleModal" class="btn btn-success" data-bs-toggle="modal"><i
+                            class="material-icons">&#xE147;</i> <span>Add New Schedule</span></a>
+
+                </div>
+            </div>
+        </div>
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>SN</th>
+                    <th>Course</th>
+                    <th>Title</th>
+                    <th>Day</th>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+
+                    <th scope="row">1</th>
+
+                    <td>Python</td>
+                    <td>Class & Objects</td>
+                    <td>Sat</td>
+                    <td>12/2022</td>
+                     <td> finish in the time kanb an cabsa asjgkjfabs avajf asvjaff jaefhka akfuakbcja</td>
+                    <td>
+                        <a href="#editScheduleModal" class="edit" data-bs-toggle="modal"><i class="material-icons"
+                                data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                        <a href="#deleteScheduleModal" class="delete" data-bs-toggle="modal"><i class="material-icons"
+                                data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                    </td>
+                </tr>
+
+
+                <tr>
+
+                    <th scope="row">2</th>
+                    <td>Java</td>
+                    <td>OOP</td>
+                    <td>Mon,Tue</td>
+                    <td>12-16</td>
+                     <td>I have to end that in estimated time cause i have to read all the modules as soon as possible</td>
+                    <td>
+                        <a href="#editScheduleModal" class="edit" data-bs-toggle="modal"><i class="material-icons"
+                                data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                        <a href="#deleteScheduleModal" class="delete" data-bs-toggle="modal"><i class="material-icons"
+                                data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+
+
+
+<!-- Add Secedule Modal HTML -->
+
+
+<div id="addScheduleModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form action="/" method="POST" autocomplete="off">
+            <input type="hidden" name="_id" value="1">
+                <div class="modal-header">
+                    <h4 class="modal-title">Add Schedule</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-floating mt-3">
+                        <input type="text" class="form-control" name="course" id="floatingInputGroup1" placeholder="Course" required/>
+                        <label for="floatingInputGroup1">Course</label>
+                    </div>
+                    <div class="form-floating mt-3">
+                        <input type="text" class="form-control" name="title" id="floatingInputGroup1" placeholder="Title" required/>
+                        <label for="floatingInputGroup1">Title</label>
+                    </div>
+                    <div class="form-floating mt-3">
+                        <input type="text" class="form-control" name="day" id="floatingInputGroup1" placeholder="Day" required/>
+                        <label for="floatingInputGroup1">Day</label>
+                    </div>
+
+                    <div class="form-floating mt-3">
+                        <input type="text" class="form-control" name="date" id="floatingInputGroup1" placeholder="Date" required/>
+                        <label for="floatingInputGroup1">Date</label>
+                    </div>
+                    <div class="form-floating mt-3">
+                        <textarea class="form-control" placeholder="Leave a comment here" name="desc" id="floatingTextarea2"
+                            style="height: 100px" required/></textarea>
+                        <label for="floatingTextarea2">Descriptions</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="button" class="btn btn-default" data-bs-dismiss="modal" value="Cancel">
+                    <input type="submit" class="btn btn-success" value="Add">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+ 
+<!-- Edit Schedule Modal HTML -->
+<div id="editScheduleModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form>
+                <div class="modal-header">
+                    <h4 class="modal-title">Edit Schedule</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-floating mt-3">
+                        <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Course"
+                            />
+                        <label for="floatingInputGroup1">Course</label>
+                    </div>
+                    <div class="form-floating mt-3">
+                        <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Title" />
+                        <label for="floatingInputGroup1">Title</label>
+                    </div>
+                    <div class="form-floating mt-3">
+                        <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Day" />
+                        <label for="floatingInputGroup1">Day</label>
+                    </div>
+
+                    <div class="form-floating mt-3">
+                        <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Date" />
+                        <label for="floatingInputGroup1">Date</label>
+                    </div>
+                    <div class="form-floating mt-3">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                            style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Descriptions</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="button" class="btn btn-default" data-bs-dismiss="modal" value="Cancel">
+                    <input type="submit" class="btn btn-info" value="Save">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Delete Modal HTML -->
+<div id="deleteScheduleModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form>
+                <div class="modal-header">
+                    <h4 class="modal-title">Delete Schedule</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure you want to delete these Records?</p>
+                    <p class="text-warning"><small>This action cannot be undone.</small></p>
+                </div>
+                <div class="modal-footer">
+                    <input type="button" class="btn btn-default" data-bs-dismiss="modal" value="Cancel">
+                    <input type="submit" class="btn btn-danger" value="Delete">
+                </div>  
+            
+        </div>
+    </div>
+</div>
+
+ 

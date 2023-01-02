@@ -1,0 +1,35 @@
+.service_icon{
+    font-size: 100px;
+}
+.background1{
+    background-color: bisque;
+}
+.backk{
+    background: #75d7eb;
+}
+.background2{
+    background-color: #9dc6c9;
+}
+
+.headingtitle{
+    color:red;
+}
+
+.bac{
+    background-color: #de875e;
+    
+}
+
+.backgroundpro{
+   
+    background-image: linear-gradient(to right, #dd5e89 , #f7bb97);
+   
+}
+.navbar{
+    position: sticky;
+    top:0;
+    z-index: 10;
+     
+   
+}
+ 

@@ -1,0 +1,261 @@
+<%- include('../partials/nav2')%> 
+ 
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Courses</title>
+
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<style>
+    body {
+        background: #88ABFF;
+    }
+
+    .profileimg {
+        border-radius: 50%;
+     
+    }
+
+        .backgroundpro{
+   
+    background-image: linear-gradient(to right, #dd5e89 , #f7bb97);
+   
+}
+</style>
+
+<!-- {{!-- profile section--}} -->
+
+<section id="profile-section">
+
+    <div class="container backgroundpro shadow-lg mb-5 bg-body rounded mt-5">
+        <div class="row">
+             
+
+            <div class="col-md-6 text-center mt-2 mb-2">
+                <img src="/static/images/nite.jpg" class="profileimg" style="max-height:200px; max-width:200px;" alt="user picture">
+
+            </div>
+            <div class="col-md-6 mt-3 ">
+                <h4>Name: {{fullname}}</h4>
+                <h5>Email: {{email}}</h5>
+                <h5>Address: {{address}}</h5>
+
+                <a href="/profile" class="btn btn-success py-2 mt-3 mb-2">View Profile</a>
+
+                <button type="button" class="btn btn-danger py-2 mt-3 ms-5 mb-2">Logout</button>
+
+            </div>
+             
+
+
+        </div>
+
+    </div>
+</section>
+
+<!-- {{!-- profile section ends --}} -->
+
+
+<div class="container">
+    <div class="row mt-5">
+        <h1 class="text-center text-dark">Activities Sections...</h1>
+
+
+        <div class="col-md-4 mt-5">
+
+            <div class="card shadow-lg mb-5 bg-body rounded mt-3 border-dark">
+                <div class="card-body">
+                    <div class="container text-center py-3">
+                        <img src="/static/images/notes.png" style="max-height:200px; max-width:320px"
+                            class="card-img-top" alt="...">
+
+
+                    </div>
+
+                    <h3 class="card-title">Notes</h3>
+                    <p class="fs-8">This module let you to take notes you want for your better performance and
+                        simplicity.</p>
+                    <a href="/notes" class="btn btn-primary">View</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-4 mt-5">
+            <div class="card shadow-lg mb-5 bg-body rounded mt-3 border-dark">
+                <div class="card-body">
+                    <div class="container text-center py-3">
+                        <img src="/static/images/questions.png" style="max-height:200px;  max-width:320px"
+                            class="card-img-top" alt="...">
+
+                    </div>
+                    <h3 class="card-title">Questions</h3>
+                    <p class="fs-8">This module provides different types of questions which help to improve your
+                        learning of coding.</p>
+                    <a href="#" class="btn btn-primary">View </a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-4 mt-5">
+            <div class="card  shadow-lg mb-5 bg-body rounded mt-3 border-dark">
+                <div class="card-body">
+                    <div class="container text-center py-3">
+                        <img src="/static/images/schedule.png" style="max-height:200px;  max-width:320px"
+                            class="card-img-top" alt="schedule" />
+
+                    </div>
+                    <h3 class="card-title">Schedules</h3>
+                    <p class="fs-8">This module help you to set the schedule which makes you to prepare for the
+                        required programme.</p>
+                    <a href="/schedule" class="btn btn-primary">View</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+        <br>
+
+        <h1 class="text-center text-dark py-3">Available Courses...</h1>
+
+        <div class="col-md-4">
+            <div class="card shadow-lg mb-5 bg-body rounded mt-5 border-dark">
+                <div class="card-body">
+                    <div class="container text-center py-3">
+                        <img src="/static/images/pythonpr.png" style="max-height:200px;  max-width:320px"
+                            class="card-img-top" alt="...">
+
+                    </div>
+                    <h5 class="card-title">Python Programming language</h5>
+                    <p class="fs-8">Learn python programming language and develop skills for machine larnings for
+                        free.</p>
+                    <a href="/python-course" class="btn btn-primary">View Course</a>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-lg mb-5 bg-body rounded mt-5 border-dark">
+                <div class="card-body">
+                    <div class="container text-center py-3">
+                        <img src="/static/images/javalogo.png" style="max-height:200px;  max-width:320px"
+                            class="card-img-top" alt="...">
+
+
+                    </div>
+                    <h5 class="card-title">Java Programming language</h5>
+                    <p class="fs-8">Learn java and advance java programming and develop innovative softwares.</p>
+                    <a href="/java-course" class="btn btn-primary">View Course</a>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-lg mb-5 bg-body rounded mt-5 border-dark">
+                <div class="card-body">
+                    <div class="container text-center py-3">
+                        <img src="/static/images/flutter.png" style="max-height:200px;  max-width:320px"
+                            class="card-img-top" alt="...">
+
+
+                    </div>
+                    <h5 class="card-title">Flutter Programming language</h5>
+                    <p class="fs-8"> Learn Flutter programing language and boost your skill in mobile app
+                        development for free.</p>
+                    <a href="/flutter-course" class="btn btn-primary">View Course</a>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-lg mb-5 bg-body rounded mt-3 border-dark">
+                <div class="card-body">
+                    <div class="container text-center py-3">
+                        <img src="/static/images/Dartlogo.png" style="max-height:200px;  max-width:320px"
+                            class="card-img-top" alt="...">
+
+
+                    </div>
+                    <h5 class="card-title">Dart Programming language</h5>
+                    <p class="fs-8">Learn dart programming and develop mobile applications.</p>
+                    <a href="/dart-course" class="btn btn-primary">View Course</a>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-lg mb-5 bg-body rounded mt-3 border-dark">
+                <div class="card-body">
+                    <div class="container text-center py-3">
+                        <img src="/static/images/java script.png" style="max-height:200px;  max-width:320px"
+                            class="card-img-top" alt="...">
+
+                    </div>
+                    <h5 class="card-title">Java Script Programming language</h5>
+                    <p class="fs-8">Learn javascript and develop websites and applications.</p>
+                    <a href="/javascript-course" class="btn btn-primary">View Course</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+            <div class="card shadow-lg mb-5 bg-body rounded mt-3 border-dark">
+                <div class="card-body">
+                    <div class="container text-center py-3">
+                        <img src="/static/images/Kotlin.png" style="max-height:200px;  max-width:320px"
+                            class="card-img-top" alt="...">
+
+
+                    </div>
+                    <h5 class="card-title">Kotlin programming language</h5>
+                    <p class="fs-8">Loking for mobile app development then enroll in this module and upgrade your
+                        skill.</p>
+                    <a href="/kotlin-course" class="btn btn-primary">View Course</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
